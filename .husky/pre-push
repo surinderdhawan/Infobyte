@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-push checks..."
+echo "📝 Checking TypeScript types..."
+npm run type-check
+
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript type checking failed. Please fix the errors before pushing."
+  exit 1
+fi
+
+echo "✅ TypeScript check passed!"
+echo "🔍 Running ESLint..."
+npm run lint
+
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint check failed. Please fix the errors before pushing."
+  exit 1
+fi
+
+echo "✅ ESLint check passed!"
+echo "🏗️  Building project..."
+npm run build
+
+if [ $? -ne 0 ]; then
+  echo "❌ Build failed. Please fix the errors before pushing."
+  exit 1
+fi
+
+echo "✅ All checks passed! Pushing to remote..."
+
