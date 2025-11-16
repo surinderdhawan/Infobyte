@@ -44,6 +44,7 @@ const TechIcon = ({ name }: { name: string }) => {
 
   // Special handling for n8n (not available in Devicon, using official logo)
   if (name === 'n8n') {
+    // eslint-disable-next-line @next/next/no-img-element
     return (
       <img src="/assets/n8n.png" alt="n8n" className="w-[70%]" />
     )

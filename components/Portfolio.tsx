@@ -68,7 +68,7 @@ export default function Portfolio() {
             <span className="gradient-text">Our Portfolio</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Showcasing successful projects and innovative solutions we've delivered
+            Showcasing successful projects and innovative solutions we&apos;ve delivered
           </p>
         </motion.div>
 

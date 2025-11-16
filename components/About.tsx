@@ -47,8 +47,8 @@ export default function About() {
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               We pride ourselves on building long-term partnerships with our clients based on
               trust, transparency, and excellence. From startups to Fortune 500 companies,
-              we've helped organizations of all sizes leverage technology to achieve their
-              strategic objectives and stay competitive in today's digital landscape.
+              we&apos;ve helped organizations of all sizes leverage technology to achieve their
+              strategic objectives and stay competitive in today&apos;s digital landscape.
             </p>
             <div className="space-y-3">
               {features.map((feature, index) => (

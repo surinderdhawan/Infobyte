@@ -55,7 +55,7 @@ export default function Contact() {
             <span className="gradient-text">Get In Touch</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Ready to transform your business? Let's discuss your project
+            Ready to transform your business? Let&apos;s discuss your project
           </p>
         </motion.div>
 

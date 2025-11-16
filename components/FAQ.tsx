@@ -61,7 +61,7 @@ export default function FAQ() {
             <span className="gradient-text">Frequently Asked Questions</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Got questions? We've got answers
+            Got questions? We&apos;ve got answers
           </p>
         </motion.div>
 
@@ -109,6 +109,7 @@ export default function FAQ() {
     </section>
   )
 }
+
 
 
 

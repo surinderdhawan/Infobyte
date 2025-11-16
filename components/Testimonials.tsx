@@ -68,7 +68,7 @@ export default function Testimonials() {
             <span className="gradient-text">What Our Clients Say</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Don't just take our word for it - hear from our satisfied clients
+            Don&apos;t just take our word for it - hear from our satisfied clients
           </p>
         </motion.div>
 
@@ -85,7 +85,7 @@ export default function Testimonials() {
             >
               <QuoteIcon className="w-8 h-8 text-primary-500 mb-4" />
               <p className="text-gray-300 mb-6 leading-relaxed italic">
-                "{testimonial.content}"
+                &quot;{testimonial.content}&quot;
               </p>
               <div className="flex items-center gap-2 mb-2">
                 {[...Array(testimonial.rating)].map((_, i) => (
