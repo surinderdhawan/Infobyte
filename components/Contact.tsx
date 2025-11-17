@@ -92,7 +92,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-400 text-sm">Phone</div>
-                    <div className="text-white">+1 (555) 123-4567</div>
+                    <a href="tel:+919815002434" className="text-white hover:text-primary-400 transition-colors">+91 9815002434</a>
                   </div>
                 </motion.div>
                 <motion.div
@@ -104,7 +104,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-400 text-sm">Address</div>
-                    <div className="text-white">Your Business Address</div>
+                    <div className="text-white">SCO 97, Top Floor, Sector 35 C, Chandigarh</div>
                   </div>
                 </motion.div>
               </div>

@@ -49,7 +49,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-bold gradient-text mb-4">InfoByte Tech</h3>
+            <h3 className="text-2xl font-bold gradient-text mb-4">Infobyte Tech Solutions Pvt Ltd</h3>
             <p className="text-gray-400 mb-4">
               Transforming ideas into digital reality with cutting-edge IT solutions.
             </p>
@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} InfoByte Tech Pvt. All rights reserved.
+            © {new Date().getFullYear()} Infobyte Tech Solutions Pvt Ltd. All rights reserved.
           </p>
         </div>
       </div>
