@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 // CheckCircle Icon Component
 const CheckCircle2 = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,6 +75,16 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
+            {/* About Image */}
+            <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-6">
+              <Image
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                alt="Team Collaboration"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent" />
+            </div>
             <div className="glass rounded-2xl p-8">
               <div className="grid grid-cols-2 gap-6">
                 <motion.div

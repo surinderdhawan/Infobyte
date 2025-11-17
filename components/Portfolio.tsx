@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const ExternalLinkIcon = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -14,42 +15,42 @@ const projects = [
     description: 'Migrated legacy infrastructure to AWS cloud, reducing costs by 45% and improving scalability.',
     category: 'Cloud Solutions',
     technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
-    image: 'cloud',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
   },
   {
     title: 'E-Commerce Platform',
     description: 'Built a scalable e-commerce platform handling 1M+ daily transactions with 99.9% uptime.',
     category: 'Web Development',
     technologies: ['Next.js', 'Node.js', 'PostgreSQL', 'Redis'],
-    image: 'ecommerce',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
   },
   {
     title: 'Mobile Banking App',
     description: 'Developed secure mobile banking application with biometric authentication and real-time transactions.',
     category: 'Mobile Development',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'Blockchain'],
-    image: 'mobile',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80',
   },
   {
     title: 'AI-Powered Analytics Dashboard',
     description: 'Created intelligent analytics platform with machine learning predictions and real-time insights.',
     category: 'AI/ML',
     technologies: ['Python', 'TensorFlow', 'React', 'PostgreSQL'],
-    image: 'ai',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
   },
   {
     title: 'Healthcare Management System',
     description: 'Comprehensive healthcare management system with patient records, scheduling, and telemedicine features.',
     category: 'Enterprise Software',
     technologies: ['Java', 'Spring Boot', 'React', 'MySQL'],
-    image: 'healthcare',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&q=80',
   },
   {
     title: 'IoT Smart Home Solution',
     description: 'Integrated IoT platform connecting smart devices with centralized control and automation.',
     category: 'IoT',
     technologies: ['Python', 'MQTT', 'React', 'MongoDB'],
-    image: 'iot',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
   },
 ]
 
@@ -83,10 +84,16 @@ export default function Portfolio() {
               whileHover={{ y: -10 }}
               className="glass rounded-xl overflow-hidden hover:glow transition-all group cursor-pointer"
             >
-              <div className={`h-48 bg-gradient-to-br ${index % 3 === 0 ? 'from-primary-500/20 to-primary-700/20' : index % 3 === 1 ? 'from-secondary-500/20 to-secondary-700/20' : 'from-green-500/20 to-green-700/20'} flex items-center justify-center relative`}>
-                <div className="text-6xl font-bold opacity-20">{project.image.charAt(0).toUpperCase()}</div>
-                <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 bg-black/50 rounded-full text-xs text-white">
+              <div className="h-48 relative overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute top-4 right-4 z-10">
+                  <span className="px-3 py-1 bg-black/70 backdrop-blur-sm rounded-full text-xs text-white border border-white/20">
                     {project.category}
                   </span>
                 </div>

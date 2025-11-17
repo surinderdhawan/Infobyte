@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 // Arrow Right Icon Component
 const ArrowRight = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -11,11 +12,24 @@ const ArrowRight = ({ className }: { className?: string }) => (
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-secondary-900/20 to-primary-900/20" />
+      {/* Professional Hero Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+          alt="Professional Business Technology Background"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-slate-900/50 to-black/60" />
+      </div>
+
+      {/* Animated Background with contrasting colors */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/20 via-purple-950/15 to-indigo-950/20" />
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/30 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             x: [0, 50, 0],
@@ -28,7 +42,7 @@ export default function Hero() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary-500/30 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.3, 1],
             x: [0, -50, 0],

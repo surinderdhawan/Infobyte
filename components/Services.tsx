@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 // Icon Components
 const Code = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +106,16 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 relative">
-      <div className="container mx-auto">
+      {/* Background Decorative Image */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <Image
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80"
+          alt="Technology Pattern"
+          fill
+          className="object-cover"
+        />
+      </div>
+      <div className="container mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
