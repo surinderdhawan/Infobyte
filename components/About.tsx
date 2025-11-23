@@ -86,34 +86,27 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent" />
             </div>
             <div className="glass rounded-2xl p-8">
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-3 gap-6">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="glass rounded-xl p-6 text-center"
                 >
-                  <div className="text-4xl font-bold gradient-text mb-2">100+</div>
+                  <div className="text-4xl font-bold gradient-text mb-2">25+</div>
                   <div className="text-gray-400">Projects Completed</div>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="glass rounded-xl p-6 text-center"
                 >
-                  <div className="text-4xl font-bold gradient-text mb-2">50+</div>
-                  <div className="text-gray-400">Happy Clients</div>
+                  <div className="text-4xl font-bold gradient-text mb-2">15+</div>
+                  <div className="text-gray-400">Clients</div>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="glass rounded-xl p-6 text-center"
                 >
-                  <div className="text-4xl font-bold gradient-text mb-2">10+</div>
+                  <div className="text-4xl font-bold gradient-text mb-2">4+</div>
                   <div className="text-gray-400">Years Experience</div>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  className="glass rounded-xl p-6 text-center"
-                >
-                  <div className="text-4xl font-bold gradient-text mb-2">24/7</div>
-                  <div className="text-gray-400">Support</div>
                 </motion.div>
               </div>
             </div>
